@@ -3,7 +3,6 @@ package com.charvikent.sample.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,13 +12,16 @@ import com.charvikent.sample.model.Employee;
 
 @RestController
 @RequestMapping("/admin")
+
+
 public class HomeController {
 	
-	adminController admin=new adminController();
+	
 	
 	@RequestMapping(value ="/hi",method=RequestMethod.GET ) 
 	public String sayHello()
 	{
+		
 		String str="Hello";
 		
 		
@@ -33,7 +35,7 @@ public class HomeController {
 	@GetMapping("*")
 	public String error404()
 	{
-		admin.error404();
+		
 		String str="invalid url";
 		
 		
