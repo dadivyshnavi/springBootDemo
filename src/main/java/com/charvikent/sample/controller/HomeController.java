@@ -18,7 +18,7 @@ public class HomeController {
 	
 	
 	
-	@RequestMapping(value ="/hi",method=RequestMethod.GET ) 
+	@RequestMapping(value ="/hi",method=RequestMethod.GET )  // or @GetMapping("/hi")
 	public String sayHello()
 	{
 		

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class adminController {
 	
-	/** this is coding for error messages
+	/** this is coding for error messages in admin url
 	 * @return
 	 */
 	@GetMapping("*")
