@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.charvikent.sample.model.Employee;
 
+
+
 @RestController
-@RequestMapping("/admin")
-
-
 public class HomeController {
 	
 	
@@ -28,6 +27,15 @@ public class HomeController {
 		return str;
 		
 	}
+	
+	/*@GetMapping("/jsp") // or @GetMapping("/hi")
+	public String showJsp()
+	{
+		//System.out.println("hello jsp block");
+		
+		return "home";
+		
+	}*/
 	
 	
 	
@@ -68,7 +76,7 @@ public class HomeController {
 	{
 		List<Employee> list=new ArrayList<Employee>();
 		
-		Employee emp1=new Employee();
+Employee emp1=new Employee();
 		
 		emp1.setId(1);
 		emp1.setName("harsha");
